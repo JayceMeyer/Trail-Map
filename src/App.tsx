@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import NPMapTrail from '@npmap/trail'
@@ -47,7 +46,7 @@ function App() {
             enableTrailAlerts={true}  // Optional, defaults to true
             enableTrailAlertsToggle={true}  // Optional, defaults to true (but relies on enableTrailAlerts being true)
             enableElevationProfile={true}  // Optional, defaults to true
-            // elevationProfileOptions={myElevationProfileOptions} // Optional, has default styling
+            elevationProfileOptions={myElevationProfileOptions} // Optional, has default styling
             // useTESTElevation={true}
         />
       </div>
