@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-      <p className="header-text">NPMapTrail with Vite</p>
+      <p className="header-text">The Trail Map</p>
       <div className="map-container">
         <div className="left-side">
           <div style={{display: 'flex', flexDirection: 'row'}}>
