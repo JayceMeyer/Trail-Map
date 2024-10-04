@@ -1863,10 +1863,10 @@ export const MOCK_OAK_FLAT_TRAIL_ALERT_DATA: any = `{
 export const CUSTOM_ELEVATION_PROFILE_OPTIONS: any = {
     // Can exclude any/all properties
     chartHeight: '50%',
-    chartBackgroundColor: '#d4d4d4de',
+    chartBackgroundColor: '#fffcfabf',
     displayChartTitle: true,
     chartTitleText: 'Elevation Profile for Selected Trail',
-    chartTitleColor: 'darkgreen',
+    chartTitleColor: '#8b4513',
     chartTitlePosition: 'right',
     unitSystem: 'metric', // 'metric' | 'imperial'
     fontSize: 14,
@@ -1876,7 +1876,25 @@ export const CUSTOM_ELEVATION_PROFILE_OPTIONS: any = {
     axisLabelColor: '#1b1b1b',
     profileLineWidth: 5.0,
     profileLineColor: '#8b4513',
-    belowProfileLineColor: '#d6b59c94',
+    profileLineGradeColors: [
+        "#02b305", // 0% and less
+        "#60b302", // 1
+        "#95b302", // 2
+        "#e3d405", // 3
+        "#f0bd05", // 4
+        "#faa507", // 5
+        "#fa8507", // 6
+        "#fa6c07", // 7
+        "#fa5007", // 8
+        "#fa3407", // 9
+        "#fa0707", // 10
+        "#b00000", // more than 10%
+    ],
+    displayProfileGradeColors: false,
+    mapMarkerColor: 'goldenrod',
+    mapMarkerSize: '30px',
+    displayMarker: true,
+    belowProfileLineColor: '#694e1d66',
     displayTooltip: true,
     tooltipTextColor: '#000',
     tooltipBackgroundColor: '#eee',
@@ -1889,7 +1907,7 @@ export const CUSTOM_ELEVATION_PROFILE_OPTIONS: any = {
     distanceVerticalGridLineColor: '#0001',
     elevationHorizontalGridLineColor: '#0001',
     displayProfileLineCrosshair: true,
-    crosshairLineColor: 'darkgreen',
+    crosshairLineColor: 'black',
     chartPaddingTop: 5,
     chartPaddingBottom: 5,
     chartPaddingLeft: 10,
@@ -1897,4 +1915,4 @@ export const CUSTOM_ELEVATION_PROFILE_OPTIONS: any = {
     onChangeView: null,
     onClick: null,
     onMove: null
-  }
+}

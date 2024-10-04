@@ -28,7 +28,7 @@ function App() {
           <div style={{display: 'flex', flexDirection: 'row'}}>
             <img src={viteLogo} className="logo" alt="Vite logo" />
           </div>
-          <button onClick={() => manuallyShowFeature(MOCK_FEATURE_S_RIM_VISITOR_CENTER)} style={{padding: '20px', marginRight: '10px'}}>Example of manually showing popup of feature</button>
+          <button onClick={() => manuallyShowFeature(MOCK_FEATURE_S_RIM_VISITOR_CENTER)} style={{padding: '20px', marginRight: '10px'}}>Force Feature Popup</button>
         </div>
         
         <NPMapTrail 
@@ -41,6 +41,7 @@ function App() {
             enableTrailAlerts={true}  // Optional, defaults to true
             enableTrailAlertsToggle={true}  // Optional, defaults to true (but relies on enableTrailAlerts being true)
             enableElevationProfile={true}  // Optional, defaults to true
+            elevationProfileOptions={{mapMarkerColor: 'goldenrod'}} // Optional, has default styling
             // elevationProfileOptions={CUSTOM_ELEVATION_PROFILE_OPTIONS} // Optional, has default styling
         />
       </div>
